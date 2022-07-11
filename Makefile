@@ -1741,7 +1741,7 @@ yarn-add-D-tabler-icons:
 
 yarn-add-D-heroicons:
 	docker compose exec web yarn add -D @heroicons/react
-	
+
 # ==== Create React App ====
 
 # ---- create-react-app ----
@@ -2128,7 +2128,7 @@ yarn-add-D-swr:
 
 yarn-add-D-react-query:
 	docker compose exec web yarn add -D react-query
-	
+
 # ===== Zustand	====
 
 # https://github.com/pmndrs/zustand
@@ -2139,7 +2139,7 @@ yarn-add-D-react-query:
 # https://zenn.dev/dai_shi/articles/f848fb75650753
 
 yarn-add-D-zustand:
-	docker compose exec web yarn add -D zustand	
+	docker compose exec web yarn add -D zustand
 
 # ==== DIコンテナ ====
 
@@ -2232,6 +2232,9 @@ yarn-create-next-app:
 npx-create-next-app:
 	docker compose exec web npx create-next-app .
 
+npx-create-next-app-use-npm:
+	docker compose exec web npx create-next-app . --use-npm
+
 # TS
 yarn-create-next-app-ts:
 	docker compose exec web yarn create next-app --typescript .
@@ -2250,7 +2253,7 @@ npx-create-next-app-ts:
 # }
 yarn-add-D-next:
 	yarn add -D next react react-dom
-	
+
 # **** おすすめ環境 ****
 
 # ---- Next.js + Supabase + Mantine + React Query + Zustand etc ----
@@ -2259,7 +2262,7 @@ yarn-add-D-next-env:
 	docker compose exec web yarn add -D dayjs @mantine/core @mantine/hooks @mantine/form @mantine/dates @mantine/next tabler-icons-react @supabase/supabase-js react-query@4.0.0-beta.10 @heroicons/react date-fns yup axios zustand @mantine/notifications
 
 # **** 便利なライブラリ ****
-	
+
 # ---- tawindcss & prettier ----
 
 # 以下のマニュアルに従いsetting
@@ -2281,6 +2284,33 @@ yarn-add-D-next-tailwind-prettier:
 # corePlugins: {
 #     preflight: false,
 # },
+
+# tailwind.config.js
+# /** @type {import('tailwindcss').Config} */
+# module.exports = {
+#   content: [
+#     './pages/**/*.{js,ts,jsx,tsx}',
+#     './components/**/*.{js,ts,jsx,tsx}',
+#   ],
+#   theme: {
+#     extend: {},
+#   },
+#   plugins: [],
+#   corePlugins: {
+#     preflight: false,
+#   },
+# }
+
+# styles/global.css
+# @import "tailwindcss/base";
+# @import "tailwindcss/components";
+# @import "tailwindcss/utilities";
+
+# .prettierrc
+# {
+#   "singleQuote": true ,
+#   "semi": false
+# }
 
 # ---- gray-matter ----
 
@@ -2357,7 +2387,7 @@ yarn-add-D-ui-chakra:
 
 yarn-add-D-ui-mantine:
 	docker compose exec web yarn add -D dayjs @mantine/core @mantine/hooks @mantine/form @mantine/dates @mantine/next @mantine/notifications
-	
+
 # **** Next.jsでの設定の仕方 ****
 
 # Usage with Next.js
@@ -2404,7 +2434,7 @@ yarn-add-D-ui-mantine:
 #     </QueryClientProvider>
 #   )
 # }
-	
+
 # ---- Headless UI ----
 
 # https://headlessui.dev/
@@ -2798,18 +2828,18 @@ yarn-add-firebase:
 
 yarn-g-add-firebase-tools:
 	docker compose exec web yarn global add firebase-tools
-	
+
 # ==== Amplify ====
 
 # https://aws.amazon.com/jp/amplify/
 
 # ==== Supabase ====
 
-# https://supabase.com/	
+# https://supabase.com/
 
 yarn-add-D-supabase:
 	docker compose exec web yarn add -D @supabase/supabase-js
-	
+
 # **** Supabaseの設定 ****
 
 # ⑴ .env.localの作成
@@ -2948,7 +2978,7 @@ yarn-add-D-sort-package-json:
 
 yarn-add-D-nodesass:
 	docker compose exec web yarn add -D node-sass typed-scss-modules
-	
+
 # dayjs
 # https://day.js.org/
 # https://github.com/iamkun/dayjs/
@@ -2959,7 +2989,7 @@ yarn-add-D-nodesass:
 # https://zenn.dev/biwa/articles/8d6d1030302484
 
 yarn-add-D-dayjs:
-	docker compose exec web yarn add -D dayjs	
+	docker compose exec web yarn add -D dayjs
 
 # ---- Node.js ----
 
