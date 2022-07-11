@@ -2223,6 +2223,9 @@ yarn-add-D-typedi:
 # https://nextjs.org/learn/basics/create-nextjs-app
 # npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
 
+# 記事
+# https://y-hiroyuki.xyz/next-js
+
 # ---- Automatic Setup ----
 
 # JS
