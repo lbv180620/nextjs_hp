@@ -43,3 +43,26 @@ export const getStaticProps = async () => {
  * 開発環境でも本番環境でも等しくリクエスト毎に実行を行います！
  * getServerSidePropsは、リクエスト毎に結果を出力します。
  */
+
+/**
+ * Dynamic Routes
+ *
+ * posts/[id].js
+ *
+ * Next.jsではフォルダの構造とファイル名が直接URLのパスに対応している。
+ */
+
+/**
+ * Dynamic routes (詳細ページのpre-renderingの流れ)
+ *
+ * 1. getStaticPaths() → idの一覧を取得
+ * APIのendpointにアクセスしてどういったidがあるかの一覧を取得
+ * 今回は1~100のidを取得して来る。
+ *
+ * 2. getStaticProps()
+ * → 各idを使って個別データを取得
+ * https://jsonpalce.../posts/id
+ *
+ * 3. 取得したデータをpropsでReact Componentに渡してpre-fetching (HTML事前生成)
+ * SSGを100個分作る。
+ */
