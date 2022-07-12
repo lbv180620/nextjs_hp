@@ -2336,6 +2336,26 @@ yarn-add-D-remark:
 yarn-add-D-date-fns:
 	docker compose exec web yarn add -D date-fns
 
+# **** Vercelにデプロイ ****
+
+# https://vercel.com/login
+
+# ⑴ ビルドする
+# ⑵ GitHubにプロジェクトをpush
+# ⑶ VercelにGitHubでログイン
+# ⑷ New Project をクリック
+# ⑸ デプロイするリポジトリをpublicにする
+# ⑹ Missing Git repository? Adjust GitHub App Permissions をクリック
+# ⑺ デプロイするリポジトリをsave
+# ⑻ import をクリック
+# ⑼ Configure Project
+# - FRAMEWORK PRESET: Next.js
+# - ROOT DIRECTORY: frontend(デプロイするディレクトリを選択)
+# ⑽ Deploy をクリック
+
+# Automatic Deploy
+# コード修正し、commit → pushすると自動で再度デプロイが走る
+
 # ==== UI ====
 
 # ---- Material UI -----
