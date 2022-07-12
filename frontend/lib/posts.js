@@ -46,7 +46,5 @@ export const getPostData = async (id) => {
   const post = await res.json();
 
   // {post: post}
-  return {
-    post,
-  };
+  return post;
 };
